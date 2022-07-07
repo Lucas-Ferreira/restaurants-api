@@ -143,9 +143,11 @@ GEM
     public_suffix (4.0.7)
     puma (5.6.4)
       nio4r (~> 2.0)
+    pundit (2.2.0)
+      activesupport (>= 3.0.0)
     racc (1.6.0)
-    rack (2.2.3.1)
-    rack-mini-profiler (2.3.4)
+    rack (2.2.2)
+    rack-mini-profiler (2.2.1)
       rack (>= 1.2.0)
     rack-proxy (0.7.2)
       rack
@@ -204,6 +206,10 @@ GEM
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
     semantic_range (3.0.0)
+    simple_token_authentication (1.17.0)
+      actionmailer (>= 3.2.6, < 7)
+      actionpack (>= 3.2.6, < 7)
+      devise (>= 3.2, < 6)
     spring (4.0.0)
     sprockets (4.0.3)
       concurrent-ruby (~> 1.0)
@@ -260,12 +266,15 @@ DEPENDENCIES
   pry-byebug
   pry-rails
   puma (~> 5.0)
-  rack-mini-profiler (~> 2.0)
+  pundit
+  rack (= 2.2.2)
+  rack-mini-profiler (~> 2.2.1)
   rails (~> 6.1.6)
   redis (~> 4.0)
   sass-rails (>= 6)
   selenium-webdriver (>= 4.0.0.rc1)
   simple_form!
+  simple_token_authentication
   spring
   turbolinks (~> 5)
   tzinfo-data
